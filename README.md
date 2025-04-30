@@ -1,1 +1,1 @@
-# golang-echo-template
+# golang-url-shortner

@@ -5,9 +5,9 @@ import (
 	"strconv"
 
 	"github.com/labstack/echo/v4"
-	"github.com/pavan2108/golang-echo-template/api/routes"
-	"github.com/pavan2108/golang-echo-template/configs/environment"
-	"github.com/pavan2108/golang-echo-template/global"
+	"github.com/pavan2108/golang-url-shortner/api/routes"
+	"github.com/pavan2108/golang-url-shortner/configs/environment"
+	"github.com/pavan2108/golang-url-shortner/global"
 )
 
 var echoInstance *echo.Echo = global.ECHO_INSTANCE

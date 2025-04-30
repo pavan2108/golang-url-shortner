@@ -1,4 +1,4 @@
-module github.com/pavan2108/golang-echo-template
+module github.com/pavan2108/golang-url-shortner
 
 go 1.24.2
 

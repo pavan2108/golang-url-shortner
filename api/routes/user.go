@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/pavan2108/golang-echo-template/global"
+	"github.com/pavan2108/golang-url-shortner/global"
 )
 
 var echoInstance *echo.Echo
