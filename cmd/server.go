@@ -5,6 +5,7 @@ import (
 	"strconv"
 
 	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	"github.com/pavan2108/golang-url-shortner/api/routes"
 	"github.com/pavan2108/golang-url-shortner/configs/environment"
 	"github.com/pavan2108/golang-url-shortner/global"
@@ -12,8 +13,14 @@ import (
 
 var echoInstance *echo.Echo = global.ECHO_INSTANCE
 
+func AddMiddleware() {
+	echoInstance.Use(middleware.Logger())
+}
+
 func init() {
+	AddMiddleware()
 	routes.InitiateUserRoutes()
+	routes.InitiateUrlRoutes()
 }
 
 func StartServer() {
